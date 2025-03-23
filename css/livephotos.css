@@ -1,0 +1,33 @@
+.live-photo-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.live-photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.live-photo img,
+.live-photo video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.live-photo video {
+    display: none;
+}
+
+.live-photo.playing video {
+    display: block;
+}
+
+.live-photo.playing img {
+    display: none;
+} 
